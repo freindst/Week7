@@ -18,7 +18,7 @@ public class MemoryBucket {
 	}
 
 	public void setContent(LinkedList<Integer> content) {
-		if (this.wen == 1) {
+		if (this.wen == 1 && this.ren  == 0) {
 			if (content.size() > this.size) {
 				throw new RuntimeException("Content wrong bitwidth");
 			}
